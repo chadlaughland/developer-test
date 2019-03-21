@@ -15,8 +15,8 @@ use Illuminate\Support\Facades\Input;
 */
 
 Route::get('/', function () {
-    $users = User::all();
-    return view('users', ['users'=>$users]);
+  $users = User::all();
+  return view('users', ['users'=>$users]);
 });
 
 Route::get('/user_notes', function(){
